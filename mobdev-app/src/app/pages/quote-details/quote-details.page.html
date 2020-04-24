@@ -20,6 +20,11 @@
 			<h3><strong>Author: {{ quote.author }} </strong></h3>
 		</ion-card-content>
 	</ion-card>
-    
+
+    <ion-card *ngIf="quote">
+		<ion-card-content>
+			<h3><strong>Series: {{ quote.series }} </strong></h3>
+		</ion-card-content>
+	</ion-card>
 
 </ion-content>
