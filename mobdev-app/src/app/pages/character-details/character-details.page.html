@@ -1,5 +1,5 @@
 <ion-header>
-	<ion-toolbar color="primary">
+	<ion-toolbar color= "success">
 		<ion-buttons slot="start">
 			<ion-back-button defaulthref="/tabs/characters"></ion-back-button>
 		</ion-buttons>
@@ -18,30 +18,30 @@
 
 	<ion-card *ngIf="character">
 		<ion-card-content>
-			<h3>Character name: {{ character.name }} </h3>
+			<h3><strong> Character name: {{ character.name }} </strong> </h3>
 		</ion-card-content>
 	</ion-card>
 
 
 	<ion-card *ngIf="character">
 		<ion-card-content>
-			<h3>Character nickname: {{ character.nickname }} </h3>
+			<h3><strong> Character nickname: {{ character.nickname }} </strong>  </h3>
 		</ion-card-content>
 	</ion-card>
 
 	<ion-card *ngIf="character">
 		<ion-card-content>
-			<h3>Character occupation: {{ character.occupation }} </h3>
+			<h3><strong> Character occupation: {{ character.occupation }} </strong> </h3>
 		</ion-card-content>
 	</ion-card>
     <ion-card *ngIf="character">
 		<ion-card-content>
-			<h3>Character appearance in season: {{ character.appearance }} </h3>
+			<h3><strong> Character appearance in season: {{ character.appearance }} </strong>  </h3>
 		</ion-card-content>
 	</ion-card>
      <ion-card *ngIf="character">
 		<ion-card-content>
-			<h3>portrayed by: {{ character.portrayed }} </h3>
+			<h3><strong> portrayed by: {{ character.portrayed }} </strong> </h3>
 		</ion-card-content>
 	</ion-card>
 
