@@ -10,19 +10,18 @@ import { ApiService } from '../../services/api.service';
 })
 export class DeathDetailsPage implements OnInit {
 
-  death: any;
-  deathCount = null;
+    death: any;
+    death_Id = null;
 
-  constructor(private activatedRoute: ActivatedRoute, private api: ApiService, private favouriteService: FavouriteService) { }
+    constructor(private activatedRoute: ActivatedRoute, private api: ApiService) { }
 
   ngOnInit() {
 
-    this.deathCount = this.activatedRoute.snapshot.paramMap.get('count');
+    this.death_Id = this.activatedRoute.snapshot.paramMap.get('id');
 
-    this.api.getDeath(this.deathCount).subscribe(res => {
+    this.api.getDeath(this.death_Id).subscribe(res => {
       this.death = res[0];
     });
 
   }
-
 }

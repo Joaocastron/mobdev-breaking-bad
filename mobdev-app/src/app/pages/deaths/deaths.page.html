@@ -9,7 +9,7 @@
 	<ion-searchbar [(ngModel)]="terms"></ion-searchbar>
 	
 		<ion-list>
-			<ion-item button detail lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(deaths)">
+			<ion-item button detail lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(death)">
 				{{ death.death }}
 			</ion-item>
 		</ion-list>
